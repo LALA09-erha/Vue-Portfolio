@@ -12,23 +12,23 @@ let message = ref("");
 const sosmeds = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-linkedin",
+    url: "https://www.linkedin.com/in/fikriainunnajib/",
     icon: "https://cdn-icons-png.flaticon.com/512/174/174857.png",
   },
   {
     name: "GitHub",
-    url: "https://github.com/your-github",
+    url: "https://github.com/LALA09-erha/",
     icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
   },
 
   {
     name: "Instagram",
-    url: "https://www.instagram.com/your-instagram",
+    url: "https://www.instagram.com/fikri_erha/",
     icon: "https://cdn-icons-png.flaticon.com/512/1384/1384063.png",
   },
   {
     name: "Blog",
-    url: "https://your-blog.com",
+    url: "https://kangtunjuk.blogspot.com/",
     icon: "https://cdn-icons-png.flaticon.com/512/4494/4494538.png",
   },
 ];

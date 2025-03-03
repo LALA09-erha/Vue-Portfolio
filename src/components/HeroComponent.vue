@@ -67,7 +67,10 @@ const typeText = () => {
 };
 
 const sendEmail = () => {
-  window.open("mailto:erhafikri@gmail.com");
+  const projects = document.getElementById("contact");
+  if (projects) {
+    projects.scrollIntoView({ behavior: "smooth" });
+  }
 };
 
 const scrollToProjects = () => {

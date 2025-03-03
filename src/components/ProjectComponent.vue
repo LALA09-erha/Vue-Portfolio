@@ -8,7 +8,7 @@ const projects = ref([
   {
     name: "Student Points Management System",
     description: "Web-app to manage student points built with Laravel",
-    image: "http://fikrierha.rf.gd/img/point.png",
+    image: "https://pbs.twimg.com/media/GlIh09oaUAAYEMn?format=jpg&name=large",
     source: "https://github.com/LALA09-erha/",
     type: "Web",
   },
@@ -45,7 +45,7 @@ const projects = ref([
   {
     name: "Book Store",
     description: "Web-app to manage book store built with PHP Native",
-    image: "http://fikrierha.rf.gd/img/book.jpg",
+    image: "https://pbs.twimg.com/media/GlIh4ZIaIAERX0e?format=png&name=small",
     source: "https://bookstoreppl.000webhostapp.com/",
     type: "Web",
   },
@@ -60,7 +60,7 @@ const projects = ref([
     name: "Bacre System",
     description:
       "Web app to manage communication between security and information systems, built with Express.js.",
-    image: "http://fikrierha.rf.gd/img/bacre.png",
+    image: "https://pbs.twimg.com/media/GlIh6JdbUAEBv-z?format=jpg&name=large",
     source: "https://github.com",
     type: "Web",
   },
@@ -75,7 +75,7 @@ const projects = ref([
   {
     name: "System Absensi",
     description: "Web-app to manage student points built with Laravel",
-    image: "http://fikrierha.rf.gd/img/absen.jpg",
+    image: "https://pbs.twimg.com/media/GlIh7vqW0AA1PpX?format=png&name=small",
     source: "https://github.com/LALA09-erha/",
     type: "Web",
   },
@@ -90,7 +90,7 @@ const projects = ref([
   {
     name: "System Inventary And Payroll",
     description: "Web-app to manage student points built  With Expess.JS",
-    image: "http://fikrierha.rf.gd/img/payroll.jpg",
+    image: "https://pbs.twimg.com/media/GlIify-aMAA4OVX?format=png&name=small",
     source: "https://github.com/LALA09-erha/",
     type: "Web",
   },
@@ -105,7 +105,7 @@ const projects = ref([
     name: "System predict heart disease",
     description: "Web-app to predict heart disease built with Streamlit",
     source: "https://prediksipenyakitjantung.streamlit.app/",
-    image: "http://fikrierha.rf.gd/img/jantung.jpg",
+    image: "https://pbs.twimg.com/media/GlIihxlaUAEwwto?format=png&name=small",
     type: "Data Analyst",
   },
   {
@@ -119,28 +119,29 @@ const projects = ref([
     name: "System predict beer production",
     description: "Web-app to predict beer production built with Streamlit",
     source: "https://beermanufacturing.streamlit.app/",
-    image: "http://fikrierha.rf.gd/img/beer.jpg",
+    image: "https://pbs.twimg.com/media/GlIijiGbgAAXrCC?format=png&name=small",
     type: "Data Analyst",
   },
   {
     name: "Application Android (Sholat.id)",
     description: "Android app to show schedule of sholat With React Native",
     source: "https://github.com/LALA09-erha/",
-    image: "http://fikrierha.rf.gd/img/solat.jpg",
+    image: "https://pbs.twimg.com/media/GlIiluRWQAAiWRz?format=png&name=small",
     type: "Data Analyst",
   },
   {
     name: "System predict shares",
     description: "Web-app to predict shares built with Streamlit",
     source: "https://bukitdarmoproperty.streamlit.app/",
-    image: "http://fikrierha.rf.gd/img/saham.jpg",
+    image: "https://pbs.twimg.com/media/GlIi2n_XoAASalH?format=png&name=small",
     type: "Data Analyst",
   },
   {
     name: "Bot Discord (CocoPou)",
     description:
       "Bot discord to show information about youtube notification and football schedule",
-    image: "http://fikrierha.rf.gd/img/coco.png",
+    image:
+      "https://pbs.twimg.com/media/GlIi6BJbAAAKgRW?format=png&name=900x900",
     source:
       "https://discord.com/oauth2/authorize?client_id=796771650677899275&permissions=8&scope=bot",
     type: "Data Analyst",
@@ -148,7 +149,7 @@ const projects = ref([
   {
     name: "System Quiz Online",
     description: "Web-app to show quiz online built  With HTML,JavaScript,CSS",
-    image: "http://fikrierha.rf.gd/img/quiz.jpg",
+    image: "https://pbs.twimg.com/media/GlIi7sUWYAA4Wg6?format=jpg&name=large",
     source: "https://lala09-erha.github.io/HTML-QuizOnline/",
     type: "Web",
   },
@@ -156,7 +157,8 @@ const projects = ref([
     name: "Bot Discord (ChikaBot)",
     description:
       "Bot discord to show information about youtube notification and football schedule",
-    image: "http://fikrierha.rf.gd/img/cika.jpg",
+    image:
+      "https://pbs.twimg.com/media/GlIi9XLXMAAeOeq?format=png&name=900x900",
     source:
       "https://discord.com/oauth2/authorize?client_id=1101357310816829510&permissions=8&scope=bot",
     type: "Data Analyst",
@@ -164,7 +166,7 @@ const projects = ref([
   {
     name: "System Management Coffee Shop",
     description: "Web-app to manage coffee shop built  With Codeigniter 4",
-    image: "http://fikrierha.rf.gd/img/warkop.png",
+    image: "https://pbs.twimg.com/media/GlIjLqPacAAg9ri?format=jpg&name=medium",
     source: "https://github.com/LALA09-erha/",
     type: "Web",
   },
