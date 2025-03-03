@@ -73,11 +73,10 @@ const sendEmail = () => {
   }
 };
 
-const scrollToProjects = () => {
-  const projects = document.getElementById("projects");
-  if (projects) {
-    projects.scrollIntoView({ behavior: "smooth" });
-  }
+const downloadCv = () => {
+  window.open(
+    "https://drive.google.com/drive/u/8/folders/1qvHqOsew-QMQnExzJuJ55KNyUvzreiBk"
+  );
 };
 
 // Run the typing effect when the component is mounted
@@ -138,9 +137,9 @@ onMounted(() => {
         <div class="flex gap-4 justify-center md:justify-start mb-8">
           <button
             class="btn btn-primary hover:scale-105 transition-transform"
-            @click="scrollToProjects"
+            @click="downloadCv"
           >
-            View Portfolio
+            Download CV
           </button>
           <button
             class="btn btn-outline btn-secondary hover:scale-105 transition-transform"

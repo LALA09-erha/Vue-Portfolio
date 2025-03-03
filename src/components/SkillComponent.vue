@@ -1,7 +1,8 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 
 const idComponent = ref("skills");
+const selectedType = ref("Experience");
 
 const skills = ref([
   { name: "HTML", level: 90, color: "bg-red" },
@@ -49,6 +50,41 @@ const experience = ref([
   },
 ]);
 
+const Education = ref([
+  {
+    company: "Universitas Trunojoyo Madura",
+    position: "Bachelor of Informatics Engineering (3.81/4.00)",
+    duration: "2020 - 2024",
+  },
+  {
+    company: "SMAN 2 Bangkalan",
+    position: "Science Major (82.80)",
+    duration: "2017 - 2020",
+  },
+  {
+    company: "SMPN 2 Bangkalan",
+    position: "Junior High School",
+    duration: "2014 - 2017",
+  },
+  {
+    company: "SDN 1 Kesek",
+    position: "Elementary School",
+    duration: "2008 - 2014",
+  },
+]);
+
+const setFilter = (type) => {
+  selectedType.value = type;
+};
+
+const filteredProjects = computed(() => {
+  if (selectedType.value === "Experience") {
+    return experience.value;
+  } else {
+    return Education.value;
+  }
+});
+
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries, observer) => {
@@ -74,7 +110,7 @@ onMounted(() => {
       class="text-3xl font-bold text-gray-900 animate-hidden hover:text-white transition duration-300"
       style="text-shadow: 1px 1px wheat"
     >
-      Skills & Experience
+      Skills, Experience & Education
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6 animate-hidden">
@@ -102,40 +138,54 @@ onMounted(() => {
 
       <!-- Experience (60%) -->
       <div class="md:col-span-3 bg-gray-50 p-4 rounded-lg animate-hidden">
-        <h3 class="text-xl font-semibold mb-4 text-gray-900">Experience</h3>
+        <!-- Filter Buttons -->
+        <div class="flex space-x-3 mb-6 justify-center animate-hidden">
+          <button
+            v-for="type in ['Experience', 'Education']"
+            :key="type"
+            @click="setFilter(type)"
+            class="px-4 py-2 rounded-lg transition font-semibold hover:shadow-lg"
+            style="background-color: white"
+            :class="{
+              'text-black ': selectedType !== type,
+              'text-orange-600': selectedType === type,
+            }"
+          >
+            {{ type }}
+          </button>
+        </div>
         <!-- buatkan 2 kotak lagi -->
         <div class="grid grid-cols-2 md:grid-cols-2 gap-6">
           <div
-            v-for="exp in experience"
-            :key="exp.company"
+            v-for="(project, index) in filteredProjects"
+            :key="index"
             class="mb-4 animate-hidden bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300"
           >
             <div class="mb-2">
               <span
                 class="text-gray-600 font-bold text-lg hover:text-orange-500"
                 style="font-family: serif"
-                >{{ exp.company }}</span
+                >{{ project.company }}</span
               >
               <hr class="border-gray-300" />
               <div class="text-gray-600 text-sm" style="font-family: serif">
-                {{ exp.duration }}
+                {{ project.duration }}
               </div>
 
               <span
                 class="text-gray-600 text-md font-bold"
-                v-if="!exp.position.includes('mailto:')"
+                v-if="!project.position.includes('mailto:')"
                 style="font-family: serif"
-                >{{ exp.position }}</span
+                >{{ project.position }}</span
               >
               <a
-                :href="exp.position"
-                target="_blank"
+                href="/#contact"
                 v-else
                 class="text-gray-600 text-md font-bold text-decoration-none cursor-pointer"
                 style="font-family: serif; color: black"
                 >Please contact me via email :
                 <span class="text-blue-500">{{
-                  exp.position.replace("mailto:", "")
+                  project.position.replace("mailto:", "")
                 }}</span>
               </a>
             </div>
