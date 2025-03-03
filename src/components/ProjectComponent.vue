@@ -111,7 +111,7 @@ const projects = ref([
   {
     name: "System Inventary and office administration",
     description: "Web-app to manage student points built with Laravel",
-    image: "http://fikrierha.rf.gd/img/admin.jpg",
+    image: "https://pbs.twimg.com/media/GlIkFYVXoAAPaZK?format=png&name=small",
     source: "https://github.com/LALA09-erha/",
     type: "Web",
   },
