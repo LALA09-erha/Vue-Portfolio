@@ -181,12 +181,9 @@ onMounted(() => {
               <a
                 href="/#contact"
                 v-else
-                class="text-gray-600 text-md font-bold text-decoration-none cursor-pointer"
+                class="text-gray-600 text-md font-bold text-decoration-none cursor-pointer email"
                 style="font-family: serif; color: black"
-                >Please contact me via email :
-                <span class="text-blue-500">{{
-                  project.position.replace("mailto:", "")
-                }}</span>
+                >Please contact me via email : erhafikri@gmail.com
               </a>
             </div>
           </div>
@@ -197,6 +194,14 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@media screen and (max-width: 768px) {
+  .email,
+  .email span {
+    font-size: 0.8rem !important;
+    position: relative !important;
+  }
+}
+
 .bg-red {
   background-color: #fa0404;
 }

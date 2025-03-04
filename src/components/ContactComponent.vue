@@ -35,6 +35,11 @@ const sosmeds = [
 
 function sendEmail() {
   isLoading.value = true;
+  if (!email.value || !message.value) {
+    isLoading.value = false;
+    alert("Please fill in all required fields , marked with *");
+    return;
+  }
   axios
     .post("https://express-rest-api-test.vercel.app/send-email", {
       name: name.value,
